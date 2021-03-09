@@ -10,8 +10,6 @@ export default function Signup() {
 
     function handleSubmit(e) {
         e.preventDefault()
-
-        
         
         signup(emailRef.current.value, passwordRef.current.value)
     }
