@@ -17,9 +17,7 @@ function handleLogout () {
       <h2 className='text-center mb-4'>Profile</h2>
       {error && <Alert variant='danger'>{error}</Alert>}
       <strong>Email:</strong> {currentUser.email}
-      <Link to= '/update-rofile' className='btn btn-primary w-100 mt-3'>
-        Update Profile
-      </Link>
+      <Link to= '/update-rofile' className='btn btn-primary w-100 mt-3'></Link>
 
       </Card>
       <div className='w-100 text-center mt-2'>
