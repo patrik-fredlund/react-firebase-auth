@@ -37,7 +37,6 @@ function logout () {
     currentUser,
     signup,
     login,
-    logout
   };
 
   return (

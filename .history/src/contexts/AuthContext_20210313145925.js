@@ -21,7 +21,7 @@ return auth.signInWithEmailAndPassword(email, password)
 
 
 function logout () {
-  return auth.signOut()
+  auth.signOut()
 }
 
   useEffect(() => {
@@ -36,8 +36,7 @@ function logout () {
   const value = {
     currentUser,
     signup,
-    login,
-    logout
+    login
   };
 
   return (

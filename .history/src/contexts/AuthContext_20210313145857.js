@@ -20,9 +20,7 @@ return auth.signInWithEmailAndPassword(email, password)
   }
 
 
-function logout () {
-  return auth.signOut()
-}
+function logou
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -36,8 +34,7 @@ function logout () {
   const value = {
     currentUser,
     signup,
-    login,
-    logout
+    login
   };
 
   return (

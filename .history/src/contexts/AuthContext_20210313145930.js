@@ -36,8 +36,7 @@ function logout () {
   const value = {
     currentUser,
     signup,
-    login,
-    logout
+    login
   };
 
   return (
