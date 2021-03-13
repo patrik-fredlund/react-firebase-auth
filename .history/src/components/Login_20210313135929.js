@@ -1,12 +1,10 @@
 import React, {useRef, useState} from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import  { useAuth } from '../contexts/AuthContext'
-import { Link } from 'react-router-dom'
 
-export default function Signup() {
+export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
-    const passwordConfirmRef = useRef()
     const { signup } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
@@ -14,10 +12,7 @@ export default function Signup() {
     async function handleSubmit(e) {
         e.preventDefault()
 
-        if (passwordRef.current.value !== passwordConfirmRef.current.value ) {
-return setError('Password do not match')
-        }
-        
+       
 
         try {
             setError('')
@@ -53,7 +48,7 @@ return setError('Password do not match')
             </Card.Body>
         </Card>
             <div className='w-100 text-center mt-2'></div>
-            already have an account? Log in <Link to='/login'>Log In</Link>
+            already have an account? Log in
         </>
     )
 }

@@ -1,9 +1,8 @@
 import React, {useRef, useState} from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import  { useAuth } from '../contexts/AuthContext'
-import { Link } from 'react-router-dom'
 
-export default function Signup() {
+export default function Lo() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -53,7 +52,7 @@ return setError('Password do not match')
             </Card.Body>
         </Card>
             <div className='w-100 text-center mt-2'></div>
-            already have an account? Log in <Link to='/login'>Log In</Link>
+            already have an account? Log in
         </>
     )
 }

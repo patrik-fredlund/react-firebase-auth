@@ -53,7 +53,7 @@ return setError('Password do not match')
             </Card.Body>
         </Card>
             <div className='w-100 text-center mt-2'></div>
-            already have an account? Log in <Link to='/login'>Log In</Link>
+            already have an account? Log in <Link to='/Login'>Login</Link>
         </>
     )
 }
