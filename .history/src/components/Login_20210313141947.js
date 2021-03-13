@@ -18,7 +18,7 @@ export default function Login() {
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
     } catch {
-      setError('Failed to login');
+      setError('Failed to set an account');
     }
     setLoading(false);
   }

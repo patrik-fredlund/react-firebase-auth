@@ -31,7 +31,6 @@ return auth.signInWithEmailAndPassword(email, password)
   const value = {
     currentUser,
     signup,
-    login
   };
 
   return (

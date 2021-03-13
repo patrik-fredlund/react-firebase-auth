@@ -22,9 +22,9 @@ return setError('Password do not match')
         try {
             setError('')
             setLoading(true)
-            await signup(emailRef.current.value, passwordRef.current.value)
+            await login(emailRef.current.value, passwordRef.current.value)
         } catch {
-            setError ('Failed to create an account')
+            setError ('Failed to sig')
         }
         setLoading(false)
     }
