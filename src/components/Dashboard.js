@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   async function handleLogout() {
     setError("")
-
+  
     try {
       await logout()
       history.push("/login")
